@@ -25,6 +25,12 @@ const discovery = swarm.join(core.discoveryKey)
 // Only display the key once the Hyperbee has been announced to the DHT
 discovery.flushed().then(() => console.log('bee key:', b4a.toString(core.key, 'hex')))
 
+
+//Inser new key and value
+// await bee.put('ronni', 'Ronni SÖderberg')
+
+
+
 // Only import the dictionary the first time this script is executed
 // The first block will always be the Hyperbee header block
 if (core.length <= 1) {
