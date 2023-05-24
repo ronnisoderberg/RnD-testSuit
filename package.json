@@ -21,15 +21,15 @@
   },
   "homepage": "https://github.com/holepunchto/quick-start#readme",
   "dependencies": {
-    "b4a": "^1.6.1",
-    "corestore": "^6.4.0",
+    "b4a": "^1.6.4",
+    "corestore": "^6.6.0",
     "debounceify": "^1.0.0",
-    "graceful-goodbye": "^1.1.0",
-    "hyperbee": "^2.2.0",
-    "hypercore": "^10.5.3",
+    "graceful-goodbye": "^1.2.1",
+    "hyperbee": "^2.10.6",
+    "hypercore": "^10.10.0",
     "hyperdht": "^6.5.2",
-    "hyperdrive": "^11.0.0-alpha.9",
-    "hyperswarm": "^4.3.5",
-    "localdrive": "^1.5.0"
+    "hyperdrive": "^11.0.0-alpha.17",
+    "hyperswarm": "^4.4.1",
+    "localdrive": "^1.6.0"
   }
 }

@@ -27,24 +27,24 @@ discovery.flushed().then(() => console.log('bee key:', b4a.toString(core.key, 'h
 
 
 //Inser new key and value
-// await bee.put('ronni', 'Ronni SÖderberg')
+await bee.put('ronni', 'Lagom stor man med stort hjärta')
 
 
 
 // Only import the dictionary the first time this script is executed
 // The first block will always be the Hyperbee header block
-if (core.length <= 1) {
-  console.log('importing dictionary...')
-  const dict = await loadDictionary()
-  const batch = bee.batch()
-  for (const { key, value } of dict) {
-    await batch.put(key, value)
-  }
-  await batch.flush()
-} else {
-  // Otherwise just seed the previously-imported dictionary
-  console.log('seeding dictionary...')
-}
+// if (core.length <= 1) {
+//   console.log('importing dictionary...')
+//   const dict = await loadDictionary()
+//   const batch = bee.batch()
+//   for (const { key, value } of dict) {
+//     await batch.put(key, value)
+//   }
+//   await batch.flush()
+// } else {
+//   // Otherwise just seed the previously-imported dictionary
+//   console.log('seeding dictionary...')
+// }
 
 async function loadDictionary() {
   const compressed = await fs.promises.readFile('./dict.json.gz')
